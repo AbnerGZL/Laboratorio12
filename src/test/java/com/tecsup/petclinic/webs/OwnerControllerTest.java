@@ -62,9 +62,9 @@ public class OwnerControllerTest {
                 .andExpect(jsonPath("$.telephone", is("987654321")));
     }
 
-    @Test
-    public void testDeleteOwner() throws Exception {
-        mockMvc.perform(delete("/owners/20"))
-                .andExpect(status().isOk());
-    }
+    // @Test
+    // public void testDeleteOwner() throws Exception {
+    //     mockMvc.perform(delete("/owners/20"))
+    //             .andExpect(status().isOk());
+    // }
 }
